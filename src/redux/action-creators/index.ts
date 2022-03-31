@@ -12,7 +12,7 @@ export const depositMoney = (amount : number) => {
     }
 }
 
-export const withdrawMoeny  = (amount : number) => {
+export const withdrawMoney  = (amount : number) => {
     return  (dispatch : Dispatch<Action> ) => {
         dispatch({
             type : ActionType.WITHDRAW ,
@@ -20,12 +20,11 @@ export const withdrawMoeny  = (amount : number) => {
         })
     }
 }
-
-export const bankrupt  = (amount : number) => {
+export const withbackrupMoney  = (amount : number) => {
     return  (dispatch : Dispatch<Action> ) => {
         dispatch({
-            type : ActionType.BACKRUPT
+            type : ActionType.BACKRUPT ,
+            payload : amount
         })
-
-    }}
-
+    }
+}
